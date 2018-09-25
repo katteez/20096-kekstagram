@@ -1,7 +1,7 @@
 # Личный проект «Кекстаграм» [![Build status][travis-image]][travis-url]
 
 * Студент: [Екатерина Зощик](https://up.htmlacademy.ru/nodejs/2/user/20096).
-* Наставник: `Неизвестно`.
+* Наставник: [Константин Петров](https://up.htmlacademy.ru/nodejs/2/user/458295).
 
 ---
 
