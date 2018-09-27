@@ -1,3 +1,4 @@
+const os = require('os');
 const userCommand = process.argv[2];
 const appVersion = 'v0.0.1';
 const greetingMessage = `
@@ -19,10 +20,10 @@ const commands = {
       let availableCommands = ``;
 
       Object.keys(commands).forEach((cmd) => {
-        availableCommands += `${cmd} —  ${commands[cmd].description}\n`;
+        availableCommands += `${cmd} — ${commands[cmd].description}${os.EOL}`;
       });
 
-      console.log(`Доступные команды:\n${availableCommands}`);
+      console.log(`Доступные команды:${os.EOL}${availableCommands}`);
     }
   }
 };
