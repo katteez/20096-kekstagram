@@ -1,6 +1,6 @@
-const os = require('os');
+const os = require(`os`);
 const userCommand = process.argv[2];
-const appVersion = 'v0.0.1';
+const appVersion = `v0.0.1`;
 const greetingMessage = `
   Привет, пользователь!
   Эта программа будет запускать сервер «Кекстаграм».
@@ -9,14 +9,14 @@ const greetingMessage = `
 
 const commands = {
   '--version': {
-    description: 'печатает версию приложения',
-    action: function() {
+    description: `печатает версию приложения`,
+    action() {
       console.log(appVersion);
     }
   },
   '--help': {
-    description: 'печатает этот текст',
-    action: function() {
+    description: `печатает этот текст`,
+    action() {
       let availableCommands = ``;
 
       Object.keys(commands).forEach((cmd) => {
