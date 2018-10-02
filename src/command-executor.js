@@ -1,4 +1,4 @@
-const colors = require(`colors/safe`);
+require(`colors`);
 const versionCommand = require(`./version.js`);
 const authorCommand = require(`./author.js`);
 const licenseCommand = require(`./license.js`);
