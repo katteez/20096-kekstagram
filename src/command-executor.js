@@ -35,7 +35,7 @@ module.exports = {
         process.exit(1);
       }
     } else {
-      console.log(colors.cyan(greetingMessage));
+      console.log(greetingMessage.cyan);
     }
   }
 };

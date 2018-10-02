@@ -1,5 +1,5 @@
 const os = require(`os`);
-const colors = require(`colors/safe`);
+require(`colors`);
 
 module.exports = {
   name: `help`,
@@ -8,11 +8,11 @@ module.exports = {
     let availableCommands = ``;
 
     Object.keys(commands).forEach((cmd) => {
-      availableCommands += `${colors.gray(cmd)} —  ${colors.green(commands[cmd].description)}${os.EOL}`;
+      availableCommands += `${cmd.gray} — ${commands[cmd].description.green}${os.EOL}`;
     });
 
     if (unknownCommand) {
-      console.error(`Неизвестная команда: ${colors.red(unknownCommand)}`);
+      console.error(`Неизвестная команда: ${unknownCommand.red}`);
     }
 
     console.log(`Доступные команды:${os.EOL}${availableCommands}`);

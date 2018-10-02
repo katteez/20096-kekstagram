@@ -1,10 +1,10 @@
-const colors = require(`colors/safe`);
+require(`colors`);
 const packageVersion = require(`../package.json`).version;
 
 let packageVersionArray = packageVersion.split(`.`);
-const majorVersion = colors.red(packageVersionArray[0]);
-const minorVersion = colors.green(packageVersionArray[1]);
-const patchVersion = colors.blue(packageVersionArray[2]);
+const majorVersion = packageVersionArray[0].red;
+const minorVersion = packageVersionArray[1].green;
+const patchVersion = packageVersionArray[2].blue;
 
 module.exports = {
   name: `version`,

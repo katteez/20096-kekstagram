@@ -1,10 +1,10 @@
-const colors = require(`colors/safe`);
+require(`colors`);
 const packageAuthor = require(`../package.json`).author;
 
 module.exports = {
   name: `author`,
   description: `печатает имя автора`,
   execute() {
-    console.log(colors.cyan(packageAuthor));
+    console.log(packageAuthor.cyan);
   }
 };
