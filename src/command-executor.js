@@ -30,8 +30,7 @@ module.exports = {
       if (commands[userCommand]) {
         commands[userCommand].execute(commands);
       } else {
-        console.error(`Неизвестная команда ${userCommand}`);
-        helpCommand.execute(commands);
+        helpCommand.execute(commands, userCommand);
         process.exit(1);
       }
     } else {
