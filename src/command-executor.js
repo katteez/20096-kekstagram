@@ -1,3 +1,4 @@
+require(`colors`);
 const versionCommand = require(`./version.js`);
 const authorCommand = require(`./author.js`);
 const licenseCommand = require(`./license.js`);
@@ -34,7 +35,7 @@ module.exports = {
         process.exit(1);
       }
     } else {
-      console.log(greetingMessage);
+      console.log(greetingMessage.cyan);
     }
   }
 };
