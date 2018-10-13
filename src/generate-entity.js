@@ -8,10 +8,35 @@ const MAX_COMMENT_LENGTH = 140;
 const IS_UNIQUE_COMMENTS = true;
 const DAYS = 7;
 
-const EFFECTS = [`none`, `chrome`, `sepia`, `marvin`, `phobos`, `heat`];
+const EFFECTS = [
+  `none`,
+  `chrome`,
+  `sepia`,
+  `marvin`,
+  `phobos`,
+  `heat`];
 
-const HASHTAGS = [`nice`, `awesome`, `sunset`, `cat`, `meow`, `dog`, `nature`, `sunrise`, `tree`, `justDoIt`,
-  `sportIsCool`, `movieNight`, `route66`, `hardwork`, `travel`, `game`, `photo`, `notebook`, `evening`, `goodMorning`];
+const HASHTAGS = [
+  `nice`,
+  `awesome`,
+  `sunset`,
+  `cat`,
+  `meow`,
+  `dog`,
+  `nature`,
+  `sunrise`,
+  `tree`,
+  `justDoIt`,
+  `sportIsCool`,
+  `movieNight`,
+  `route66`,
+  `hardwork`,
+  `travel`,
+  `game`,
+  `photo`,
+  `notebook`,
+  `evening`,
+  `goodMorning`];
 
 const TEXT = `Задача организации,
 в особенности же реализация намеченных плановых заданий представляет собой интересный эксперимент проверки позиций,
