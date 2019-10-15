@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/katteez/20096-kekstagram#readme",
   "devDependencies": {
-    "eslint": "5.6.1",
+    "eslint": "5.13.0",
     "eslint-config-htmlacademy": "0.5.2",
     "mocha": "5.2.0"
   },
